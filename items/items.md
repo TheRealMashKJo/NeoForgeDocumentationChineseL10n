@@ -158,7 +158,7 @@ ExampleBlocksClass.EXAMPLE_BLOCK
 ### 已有的创造模式物品栏
 > 注：这个方法用于将你的物品加入到Minecraft或其他Mod的创造模式物品栏中。要加入到你自己的创造模式物品栏，看下文。
 
-一个物品可以通过`BuildCreativeModeTabContentsEvent`被加入到一个已有的`CreativeModeTab`，该事件只在Mod事件总线、逻辑客户端上运行。调用`event#accept`来添加新物品。
+一个物品可以通过`BuildCreativeModeTabContentsEvent`被加入到一个已有的`CreativeModeTab`，该事件只在Mod事件总线、逻辑客户端上触发。调用`event#accept`来添加新物品。
 
 ```Java
 //MyItemsClass.MY_ITEM是一个Supplier<? extends Item>, MyBlocksClass.MY_BLOCK是一个Supplier<? extends Block>
